@@ -2,6 +2,13 @@
 
 Please write an extended ping-type program as follows:
 
+### Requirements
+
+ - Language : C#
+ - .NET Framework : Any .NET4 or .NET Core or .NET6
+ - Type : WPF Desktop Application
+ - IDE : VS2019 or VS2022
+
 ### GUI
 
  - Dialog with a Grid, two buttons (Start and Stop) and a Status bar
@@ -29,13 +36,6 @@ Please write an extended ping-type program as follows:
  - Please apply best coding practices, methodologies, patterns, principles and conventions as if this was a commercial application
  - There is no time limit on completing the test
  - Create a branch for your code from this Github repository. Once completed publish your code back to GitHub and send a pull request.
-
-### Requirements
-
- - Language : C#
- - .NET Framework : Any .NET4 or .NET Core or .NET6
- - Type : WPF Desktop Application
- - IDE : VS2019 or VS2022
 
 #### Using echotool.exe
 
