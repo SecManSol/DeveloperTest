@@ -30,12 +30,13 @@ Please write an extended ping-type program as follows:
 
 ### Notes
 
- - Do not spend too much time on making a pretty interface, as long as it does not look like something a 10 year old slapped together
- - Do not spend too much time on handling every exception/error that could possibly occur.
- <br>Your program **must** still be robust though in that it should not crash, but rather display appropriate messages in the GUI Status bar
  - Please apply best coding practices, methodologies, patterns, principles and conventions as if this was a commercial application
+ <br>Do not spend too much time however on making a pretty interface, so long as it does not look like something a 10 year old slapped together.
+ Also do not spend too much time on handling every exception/error that could possibly occur.
+ <br>Your program **must** still be robust though in that it should not crash, but rather display appropriate messages in the GUI Status bar.
  - There is no time limit on completing the test
- - Create a branch for your code from this Github repository. Once completed publish your code back to GitHub and send a pull request.
+ - Create a branch for your code from this Github repository. Once completed publish your code back to GitHub and send a pull request
+ <br>Use the pull request to comment on your implementation, possible improvements, or anything else that you would like to mention.
 
 #### Using echotool.exe
 
