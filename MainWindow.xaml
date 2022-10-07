@@ -1,0 +1,32 @@
+﻿<Window x:Class="EchoTested.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EchoTested"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF39494C" Offset="0.008"/>
+                <GradientStop Color="#FF39494C" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Host:" HorizontalAlignment="Left" Height="32" Margin="204,94,0,0" VerticalAlignment="Top" Width="62" FontSize="20" Foreground="White"/>
+        <Label Content="Port:" HorizontalAlignment="Left" Margin="366,94,0,0" VerticalAlignment="Top" Height="40" Width="56" FontSize="20" Foreground="White"/>
+        <DataGrid x:Name="dataGrid" ItemsSource="{Binding displayDataList}" Margin="0,0,617,0" Background="#FFDDDDDD">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header = "Started" Binding = "{Binding Started}" />
+                <DataGridTextColumn Header = "Processed" Binding = "{Binding Processed}" />
+                <DataGridTextColumn Header = "Elapsed?" Binding = "{Binding Elapsed}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Height="29" Margin="524,97,0,0" VerticalAlignment="Top" Width="97" Click="btnStart_Click"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Height="29" Margin="651,97,0,0" VerticalAlignment="Top" Width="95" Click="btnStop_Click"/>
+        <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Height="159" Margin="204,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="542" Background="#FFDDDDDD"/>
+        <TextBox x:Name="txtHost" HorizontalAlignment="Left" Height="26" Margin="262,100,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="90" FontSize="20" Background="{x:Null}" Foreground="White"/>
+        <TextBox x:Name="txtPort" HorizontalAlignment="Left" Height="26" Margin="418,99,0,0" TextWrapping="Wrap" Text="12345" VerticalAlignment="Top" Width="90" FontSize="20" Background="{x:Null}" Foreground="White"/>
+
+    </Grid>
+</Window>
